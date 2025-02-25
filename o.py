@@ -320,7 +320,7 @@ async def set_attack_parameters(update: Update, context: CallbackContext):
 def main():
     application = Application.builder().token(TELEGRAM_BOT_TOKEN).build()
     application.add_handler(CommandHandler("start", start))
-    application.add_handler(CommandHandler("sahil", sahil))
+    application.add_handler(CommandHandler("nothing", nothing))
     application.add_handler(CommandHandler("attack", attack))
     application.add_handler(CommandHandler("myinfo", myinfo))
     application.add_handler(CommandHandler("help", help))
